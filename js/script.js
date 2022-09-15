@@ -30,8 +30,23 @@ function easyCalc(){
 
     let add = newNumbers[2] + newNumbers[4];
 
-    document.getElementById('resultOfAdd').innerHTML = add.toString;
-    
-
-
+    document.getElementById('resultOfAdd').innerHTML = add;
 }
+
+
+let popArray = newNumbers.pop();
+
+document.getElementById('leaveLast').innerHTML = popArray;
+
+let pushedArray = newNumbers.push(9);
+
+document.getElementById('addedElement').innerHTML = pushedArray;
+
+let shiftedArray = newNumbers.shift();
+
+document.getElementById('leaveFirst').innerHTML = shiftedArray;
+
+
+let unshiftedArray = newNumbers.unshift(77);
+
+document.getElementById('addAtStart').innerHTML = unshiftedArray;
