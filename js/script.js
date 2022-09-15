@@ -15,9 +15,9 @@ document.getElementById('personList').innerHTML = peopleList;
 
 document.getElementById('thirdElement').innerHTML = peopleList[2];
 
-let addedValue = "Matilde";
+let addedValue = peopleList += ", Matilde";
 
-peopleList.push(addedValue)
+
 
 document.getElementById('addedName').innerHTML = peopleList;
 
@@ -31,7 +31,10 @@ function easyCalc(){
     let add = newNumbers[2] + newNumbers[4];
 
     document.getElementById('resultOfAdd').innerHTML = add;
+
 }
+
+easyCalc();
 
 
 let popArray = newNumbers.pop();
